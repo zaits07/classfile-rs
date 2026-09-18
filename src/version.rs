@@ -72,7 +72,18 @@ pub enum MajorVersion {
 	JAVA_12 = 56,
 	JAVA_13 = 57,
 	JAVA_14 = 58,
-	JAVA_15 = 59
+	JAVA_15 = 59,
+  	JAVA_16 = 60,
+  	JAVA_17 = 61,
+  	JAVA_18 = 62,
+  	JAVA_19 = 63,
+  	JAVA_20 = 64,
+  	JAVA_21 = 65,
+  	JAVA_22 = 66,
+  	JAVA_23 = 67,
+  	JAVA_24 = 68,
+  	JAVA_25 = 69,
+  	JAVA_26 = 70,
 }
 
 impl From<MajorVersion> for u16 {
@@ -100,6 +111,17 @@ impl TryFrom<u16> for MajorVersion {
 			57 => MajorVersion::JAVA_13,
 			58 => MajorVersion::JAVA_14,
 			59 => MajorVersion::JAVA_15,
+			60 => MajorVersion::JAVA_16,
+			61 => MajorVersion::JAVA_17,
+			62 => MajorVersion::JAVA_18,
+			63 => MajorVersion::JAVA_19,
+			64 => MajorVersion::JAVA_20,
+			65 => MajorVersion::JAVA_21,
+			66 => MajorVersion::JAVA_22,
+			67 => MajorVersion::JAVA_23,
+			68 => MajorVersion::JAVA_24,
+			69 => MajorVersion::JAVA_25,
+			70 => MajorVersion::JAVA_26,
 			_ => return Err(ParserError::Unrecognized("major version", version.to_string()))
 		})
 	}
