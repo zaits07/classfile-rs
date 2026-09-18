@@ -471,7 +471,7 @@ impl InsnParser {
 				InsnParser::AALOAD | InsnParser::AASTORE | InsnParser::ACONST_NULL |
 				InsnParser::ALOAD_0 | InsnParser::ALOAD_1 | InsnParser::ALOAD_2 |
 				InsnParser::ALOAD_3 | InsnParser::ARETURN | InsnParser::ARRAYLENGTH |
-				InsnParser::ASTORE_0 | InsnParser::ASTORE_2 | InsnParser::ASTORE_3 |
+				InsnParser::ASTORE_0 | InsnParser::ASTORE_1 | InsnParser::ASTORE_2 | InsnParser::ASTORE_3 |
 				InsnParser::ATHROW | InsnParser::BALOAD | InsnParser::BASTORE |
 				InsnParser::BREAKPOINT | InsnParser::CALOAD | InsnParser::CASTORE |
 				InsnParser::D2F | InsnParser::D2I | InsnParser::D2L | InsnParser::DADD |
